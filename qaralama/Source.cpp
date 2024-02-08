@@ -1,14 +1,4 @@
-﻿//==========================================
-// Adı				: Programlamaya Giriş 
-// Yazar			: Gülüzar ÇİT
-// Versiyon			: 1.0
-// Telif Hakkı		: @Copyright 2018
-//=========================================
-// Dosyalama
-//=========================================
-
-
-// Bu program boş kayıt alanlarına sahip bir dosya oluşturur.
+﻿
 #include <iostream>
 #include <fstream>
 using namespace std;
@@ -46,7 +36,7 @@ int sutun, satir;
 
 
 void clone() {
-	cout << "Yanlish secim\n -------------\n";
+	cout << "Wrong choice\n -------------\n";
 	do
 	{
 		cin >> a;
@@ -54,96 +44,96 @@ void clone() {
 		
 		if (a == 1) {
 			if (harf == dizi[0][0] || harf2 == dizi[0][0]) {
-				cout << "Yanlish secim\n";
+				cout << "Wrong choice\n";
 
 			}
 			if (harf != dizi[0][0] && harf2 != dizi[0][0]) {
-				cout << "Dogru\n -------------\n";
+				cout << "correct choice\n -------------\n";
 				break;
 			}
 		}
 		if (a == 2) {
 			if (harf == dizi[0][1] || harf2 == dizi[0][1]) {
-				cout << "Yanlish secim\n";
+				cout << "Wrong choice\n";
 
 			}
 			if (harf != dizi[0][1] && harf2 != dizi[0][1]) {
-				cout << "Dogru\n -------------\n";
+				cout << "correct choice\n -------------\n";
 				break;
 			}
 		}
 		if (a == 3) {
 			if (harf == dizi[0][2] || harf2 == dizi[0][2]) {
-				cout << "Yanlish secim\n";
+				cout << "Wrong choice\n";
 
 			}
 			if (harf != dizi[0][2] && harf2 != dizi[0][2]) {
-				cout << "Dogru\n -------------\n";
+				cout << "correct choice\n -------------\n";
 				break;
 			}
 		}
 		if (a == 4) {
 			if (harf == dizi[1][0] || harf2 == dizi[1][0]) {
-				cout << "Yanlish secim\n";
+				cout << "Wrong choice\n";
 
 			}
 			if (harf != dizi[1][0] && harf2 != dizi[1][0]) {
-				cout << "Dogru\n -------------\n";
+				cout << "correct choice\n -------------\n";
 				break;
 			}
 		}
 		if (a == 5) {
 			if (harf == dizi[1][1] || harf2 == dizi[1][1]) {
-				cout << "Yanlish secim\n";
+				cout << "Wrong choice\n";
 
 			}
 			if (harf != dizi[1][1] && harf2 != dizi[1][1]) {
-				cout << "Dogru\n -------------\n";
+				cout << "correct choice\n -------------\n";
 				break;
 			}
 		}
 		if (a == 6) {
 			if (harf == dizi[1][2] || harf2 == dizi[1][2]) {
-				cout << "Yanlish secim\n";
+				cout << "Wrong choice\n";
 
 			}
 			if (harf != dizi[1][2] && harf2 != dizi[1][2]) {
-				cout << "Dogru\n -------------\n";
+				cout << "correct choice\n -------------\n";
 				break;
 			}
 		}
 		if (a == 7) {
 			if (harf == dizi[2][0] || harf2 == dizi[2][0]) {
-				cout << "Yanlish secim\n";
+				cout << "Wrong choice\n";
 
 			}
 			if (harf != dizi[2][0] && harf2 != dizi[2][0]) {
-				cout << "Dogru\n -------------\n";
+				cout << "correct choice\n -------------\n";
 				break;
 			}
 		}
 		if (a == 8) {
 			if (harf == dizi[2][1] || harf2 == dizi[2][1]) {
-				cout << "Yanlish secim\n";
+				cout << "Wrong choice\n";
 
 			}
 			if (harf != dizi[2][1] && harf2 != dizi[2][1]) {
-				cout << "Dogru\n -------------\n";
+				cout << "correct choice\n -------------\n";
 				break;
 			}
 		}
 		if (a == 9) {
 			if (harf == dizi[2][2] || harf2 == dizi[2][2]) {
-				cout << "Yanlish secim\n";
+				cout << "Wrong choice\n";
 
 			}
 			if (harf != dizi[2][2] && harf2 != dizi[2][2]) {
-				cout << "Dogru\n -------------\n";
+				cout << "correct choice\n -------------\n";
 				break;
 			}
 		}
 		if (a != 1 && a != 2 && a != 3 && a != 4 && a != 5 && a != 6 && a != 7 && a != 8 && a != 9) {
-			cout << "Yanlish secim \n -------------\n";
+			cout << "Wrong choice \n -------------\n";
 		}
 		
 
@@ -164,7 +154,7 @@ int main()
 
 
 
-			cout << "1.oyuncu.Blok seciniz : ";
+			cout << "1st player. Select block:";
 
 
 
@@ -309,9 +299,9 @@ int main()
 				(dizi[0][2] == harf && dizi[1][2] == harf && dizi[2][2] == harf) ||
 				(dizi[0][0] == harf && dizi[1][1] == harf && dizi[2][2] == harf) ||  // Diagonal
 				(dizi[0][2] == harf && dizi[1][1] == harf && dizi[2][0] == harf)) {
-				cout << "1.oyuncu kazandi\n\n";
+				cout << "player 1 won\n\n";
 
-				cout << "TEKRAR OYNAMAK ISTERMISINIZ?CIKIS ICIN 2 BASINIZ,DEVAM ETMEK ICIN ISTENILEN RAKAMI YAZINIZ\n";
+				cout << "DO YOU WANT TO PLAY AGAIN? PRESS 2 TO EXIT, WRITE THE DESIRED NUMBER TO CONTINUE\n";
 				cin >> c;
 				if (c == 1) {
 
@@ -322,7 +312,7 @@ int main()
 					}
 				}
 				else if (c == 2) {
-					cout << "CIKIS...\n";
+					cout << "EXİT...\n";
 					break;
 				}
 			}
@@ -338,7 +328,7 @@ int main()
 
 
 			do {
-				cout << "2.oyuncu.Blok seciniz : ";
+				cout << "Select 2nd player.Block: ";
 				cin >> b;
 
 				cout << " -------------\n";
@@ -463,10 +453,10 @@ int main()
 				(dizi[0][2] == harf2 && dizi[1][2] == harf2 && dizi[2][2] == harf2) ||
 				(dizi[0][0] == harf2 && dizi[1][1] == harf2 && dizi[2][2] == harf2) ||  // Diagonal
 				(dizi[0][2] == harf2 && dizi[1][1] == harf2 && dizi[2][0] == harf2)) {
-				cout << "2.oyuncu kazandi\n\n";
+				cout << "2nd player won\n\n";
 			
 
-				cout << "TEKRAR OYNAMAK ISTERMISINIZ 1.EVET 2.HAYIR\n";
+				cout << "DO YOU WANT TO PLAY AGAIN 1.YES 2.NO\n";
 				cin >> c;
 				if (c == 1) {
 
@@ -477,13 +467,13 @@ int main()
 					}
 				}
 				else if (c == 2) {
-					cout << "CIKIS...\n";
+					cout << "EXİT...\n";
 					break;
 				}
 			}
 			else if (dizi[0][0] != ' ' && dizi[0][1] != ' ' && dizi[0][2] != ' ' && dizi[1][0] != ' ' && dizi[1][1] != ' ' && dizi[1][2] != ' ' && dizi[2][0] != ' ' && dizi[2][1] != ' ' && dizi[2][2] != ' ') {
-				cout << "Oyun bitdi..\n";
-				cout << "TEKRAR OYNAMAK ISTERMISINIZ 1.EVET 2.HAYIR\n";
+				cout << "Game over..\n";
+				cout << "DO YOU WANT TO PLAY AGAIN 1.YES 2.NO\n";
 				cin >> c;
 				if (c == 1) {
 
@@ -494,7 +484,7 @@ int main()
 					}
 				}
 				else if (c == 2) {
-					cout << "CIKIS...\n";
+					cout << "EXİT...\n";
 					break;
 				}
 			}
@@ -505,10 +495,7 @@ int main()
 	}
 	while (c != 2);
 
-	// 1 oyuncu kazandi+
-	// 2 oyuncu kazandi +
-	// tekrar oynamak istermisiniz+
-	// hansi sutunlar giriniz
+	
 }
 
 
